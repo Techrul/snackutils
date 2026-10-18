@@ -1,6 +1,8 @@
 # Snackutils
 
 Tiny utilities that could save you a few lines
+[Github](https://github.com/Techrul/snackutils)
+[PyPi](https://pypi.org/project/snackutils/)
 ## Install
 
 ```bash
