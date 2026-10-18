@@ -70,6 +70,6 @@ mean = average
 # --------------------------------------------------------------------------
 
 def average_list(numbers: list[float]) -> float:
-    return sum(numbers) / len(list)
+    return sum(numbers) / len(numbers)
 
 mean_list = average_list
