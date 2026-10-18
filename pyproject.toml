@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "snackutils"
+version = "0.1.0"
+description = "Tiny, dependency-free utilities that might save you a few lines."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Techrul" }]
+keywords = ["utilities", "helpers", "8ball", "os", "tiny"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/techrul/snackutils"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/snackutils"]
+
+[tool.basedpyright]
+venvPath = "."
+venv = ".venv"
