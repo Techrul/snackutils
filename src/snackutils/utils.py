@@ -55,6 +55,8 @@ def detect_os() -> str: #I made this as readable as possible in my opinion
         return "Windows"
     elif name == "darwin":
         return "MacOS"
+    elif name == "ios":
+        return "iOS"
     else:
         return name.title()
 
