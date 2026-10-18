@@ -27,4 +27,4 @@ Bug? Issue? Feature request? Submit it in [issues](https://github.com/techrul/sn
 
 ## License
 
-MIT
+[MIT](https://github.com/Techrul/snackutils?tab=MIT-1-ov-file)
