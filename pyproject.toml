@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "snackutils"
-version = "0.1.1"
+version = "0.1.2"
 description = "Tiny, dependency-free utilities that might save you a few lines."
 readme = "README.md"
 requires-python = ">=3.9"
