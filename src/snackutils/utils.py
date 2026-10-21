@@ -49,7 +49,7 @@ def roll_dice() -> int:
 
 # --------------------------------------------------------------------------
 
-def detect_os() -> str: #I made this as readable as possible in my opinion
+def detect_os() -> str: # I made this as readable as possible in my opinion
     name = sys.platform
     if name == "win32":
         return "Windows"
@@ -73,3 +73,22 @@ def average_list(numbers: list[float]) -> float:
     return sum(numbers) / len(numbers)
 
 mean_list = average_list
+
+# --------------------------------------------------------------------------
+
+def percent_choose(a: float, b: float) -> int:# a and b are percentages for options 1 and 2; each is rounded to the
+
+    a_tenths = round(a * 10)                  # nearest tenth, must be between 0 and 100, and must add to 100.
+    b_tenths = round(b * 10)
+
+    if not (0 <= a_tenths <= 1000 and 0 <= b_tenths <= 1000):
+        raise ValueError("Percentages must be between 0 and 100")
+    if a_tenths + b_tenths != 1000:
+        raise ValueError("Percentages must add to exactly 100")
+
+    if random.randrange(1000) < a_tenths:
+        return 1
+    else:
+        return 2
+    
+
