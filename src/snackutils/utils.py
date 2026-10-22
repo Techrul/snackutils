@@ -3,7 +3,7 @@ import random
 import sys
 
 #== State functions ==
-__all__ = ["eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list"]
+__all__ = ["eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose"]
 
 #== Functions ==
 
