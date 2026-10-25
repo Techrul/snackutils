@@ -20,6 +20,13 @@ Want a utility? Suggest it in [issues](https://github.com/techrul/snackutils/iss
 | `detect_os()` | Returns your OS name, like `"Windows"`, `"MacOS"`, or `"Linux"` |
 | `average(a, b)` / `mean(a, b)` | Average of two numbers |
 | `average_list(numbers)` / `mean_list(numbers)` | Average of a list of numbers |
+| `percent_choose(a,b)` | Chooses 1(a) or 2(b) using the percent given (a and b). Goes up to a float of one decimal (rounds if not) and a and b has to add to 100 or it doesn't work properly |
+| `better_sleep(a, b)` | Sleep but you can use units (seconds, minutes, hours, days)|
+| `ai_detector(text)` | Detects if text was made with AI with 100% accuracy (checks if there's em dashes)|
+| `lazy_randint(num)` | Gives you a random integer from 1 to num, saves you like 1 key press and all the control|
+| `unhelpful_friend(question)` | Your friend gives you unhelpful answers. Input is optional as it doesn't do anything|
+
+
 
 ## Requests
 
@@ -27,4 +34,4 @@ Bug? Issue? Feature request? Submit it in [issues](https://github.com/techrul/sn
 
 ## License
 
-[MIT](https://github.com/Techrul/snackutils?tab=MIT-1-ov-file)
+[MIT](https://github.com/Techrul/snackutils/blob/main/LICENSE)

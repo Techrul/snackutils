@@ -4,11 +4,12 @@ import sys
 import time
 
 #== State functions ==
-__all__ = ["eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose", "better_sleep", "ai_detector"]
+# not in chronogical or alphabetical order
+__all__ = ["unhelpful_friend", "eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose", "better_sleep", "ai_detector", "lazy_randint"]
 
 #== Functions ==
 
-_ANSWERS = [
+_EIGHT_BALL_ANSWERS = [
     "It is certain",
     "It is decidedly so",
     "Without a doubt",
@@ -106,3 +107,52 @@ def better_sleep(value: float, units: str = "seconds") -> None:
 
 def ai_detector(text: str) -> bool: #100% accuracy btw
     return "—" in text
+
+# --------------------------------------------------------------------------
+
+def lazy_randint(num) -> int:
+    return random.randint(1, num)
+
+# --------------------------------------------------------------------------
+
+_FRIEND_ANSWERS = [
+    "Yes",
+    "No",
+    "Huh?",
+    "What?",
+    "I don't know",
+    "Google it",
+    "What do you mean?",
+    "Maybe",
+    "Nah",
+    "Yeah",
+    "Come again?",
+    "I beg your pardon?",
+    "Uhh",
+    "Umm",
+    "Ask someone else",
+    "I'm busy",
+    "*Has headphones on*",
+    "*Ghosts you*",
+    "Ask an eight ball",
+    "Go flip a coin",
+    "Who knows?",
+    "*Ignores you*",
+    "True",
+    "False",
+    "Sometimes",
+    "I don't think so",
+    "I think so",
+    "I'm not sure",
+    "I'm not positive",
+    "Why?",
+    "¿Puedes repetir, por favor?",
+    "Sí",
+    "*Scrolling TikTok*",
+    "*Sleeping*",
+    "Ask AI",
+    "..."
+]
+
+def unhelpful_friend(question: str = "") -> str: #The question doesn't matter it's only there for cosmetic purposes
+    return random.choice(_FRIEND_ANSWERS)
