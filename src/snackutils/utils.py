@@ -1,9 +1,10 @@
 #== Import Stuff ==
 import random
 import sys
+import time
 
 #== State functions ==
-__all__ = ["eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose"]
+__all__ = ["eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose", "better_sleep", "ai_detector"]
 
 #== Functions ==
 
@@ -91,4 +92,17 @@ def percent_choose(a: float, b: float) -> int:# a and b are percentages for opti
     else:
         return 2
     
+# --------------------------------------------------------------------------
 
+_UNITS = {"second": 1, "minute": 60, "hour": 3600, "day": 86400}
+
+def better_sleep(value: float, units: str = "seconds") -> None:
+    unit = units.lower().removesuffix("s")
+    if unit not in _UNITS:
+        raise ValueError(f"Unknown unit: {units!r}. Use seconds, minutes, hours or days.")
+    time.sleep(value * _UNITS[unit])
+    
+# --------------------------------------------------------------------------
+
+def ai_detector(text: str) -> bool: #100% accuracy btw
+    return "—" in text
