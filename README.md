@@ -25,6 +25,7 @@ Want a utility? Suggest it in [issues](https://github.com/techrul/snackutils/iss
 | `ai_detector(text)` | Detects if text was made with AI with 100% accuracy (checks if there's em dashes)|
 | `lazy_randint(num)` | Gives you a random integer from 1 to num, saves you like 1 key press and all the control|
 | `unhelpful_friend(question)` | Your friend gives you unhelpful answers. Input is optional as it doesn't do anything|
+| `strip_punctuation(text)` | Removes all punctuation from inputted text|
 
 
 

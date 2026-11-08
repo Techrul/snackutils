@@ -5,7 +5,7 @@ import time
 
 #== State functions ==
 # not in chronogical or alphabetical order
-__all__ = ["unhelpful_friend", "eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose", "better_sleep", "ai_detector", "lazy_randint"]
+__all__ = ["strip_punctuation", "unhelpful_friend", "eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose", "better_sleep", "ai_detector", "lazy_randint"]
 
 #== Functions ==
 
@@ -156,3 +156,22 @@ _FRIEND_ANSWERS = [
 
 def unhelpful_friend(question: str = "") -> str: #The question doesn't matter it's only there for cosmetic purposes
     return random.choice(_FRIEND_ANSWERS)
+
+# --------------------------------------------------------------------------
+
+_PUNCTUATION = [
+    ".", 
+    ",", 
+    "!", 
+    "?", 
+    "'", 
+    '"', 
+    "—"
+]
+
+def strip_punctuation(text: str) -> str:
+    stripped = ""
+    for ch in text:
+        if ch not in _PUNCTUATION:
+            stripped += ch
+    return stripped
