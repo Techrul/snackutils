@@ -5,7 +5,7 @@ import time
 
 #== State functions ==
 # not in chronogical or alphabetical order
-__all__ = ["strip_punctuation", "unhelpful_friend", "eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose", "better_sleep", "ai_detector", "lazy_randint"]
+__all__ = ["detect_distro", "store_input_list", "strip_punctuation", "unhelpful_friend", "eight_ball", "flip_coin", "roll_dice", "detect_os", "average", "mean", "average_list", "mean_list","percent_choose", "better_sleep", "ai_detector", "lazy_randint"]
 
 #== Functions ==
 
@@ -175,3 +175,16 @@ def strip_punctuation(text: str) -> str:
         if ch not in _PUNCTUATION:
             stripped += ch
     return stripped
+
+# --------------------------------------------------------------------------
+
+def store_input_list(prompt: str, times: int) -> list[str]:
+    return [input(prompt) for _ in range(times)]
+
+# --------------------------------------------------------------------------
+
+def detect_distro() -> str: #Only works on Linux
+    try:
+        return platform.freedesktop_os_release()["PRETTY_NAME"]
+    except OSError:
+        return "Unknown"
