@@ -26,7 +26,7 @@ Want a utility? Suggest it in [issues](https://github.com/techrul/snackutils/iss
 | `lazy_randint(num)` | Gives you a random integer from 1 to num, saves you like 1 key press and all the control|
 | `unhelpful_friend(question)` | Your friend gives you unhelpful answers. Input is optional as it doesn't do anything|
 | `strip_punctuation(text)` | Removes all punctuation from inputted text|
-| `def store_input_list(prompt, times)` | Prompts user for a input with the prompt message "times" amount of times|
+| `store_input_list(prompt, times)` | Prompts user for a input with the prompt message "times" amount of times|
 | `detect_distro()` | Detect distro user is using, only works on Linux|
 
 
