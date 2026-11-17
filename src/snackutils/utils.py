@@ -2,6 +2,7 @@
 import random
 import sys
 import time
+import platform
 
 #== State functions ==
 # not in chronogical or alphabetical order
